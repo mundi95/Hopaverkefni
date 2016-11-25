@@ -1,0 +1,40 @@
+\\skra\nem-redirect$\2512982709\documents\visual studio 2013\Projects\FOR2B2U_Tverk7\FOR2B2U_Tverk7\bin\Debug\FOR2B2U_Tverk7.exe.config
+\\skra\nem-redirect$\2512982709\documents\visual studio 2013\Projects\FOR2B2U_Tverk7\FOR2B2U_Tverk7\bin\Debug\FOR2B2U_Tverk7.exe
+\\skra\nem-redirect$\2512982709\documents\visual studio 2013\Projects\FOR2B2U_Tverk7\FOR2B2U_Tverk7\bin\Debug\FOR2B2U_Tverk7.pdb
+\\skra\nem-redirect$\2512982709\documents\visual studio 2013\Projects\FOR2B2U_Tverk7\FOR2B2U_Tverk7\bin\Debug\MySql.Data.dll
+\\skra\nem-redirect$\2512982709\documents\visual studio 2013\Projects\FOR2B2U_Tverk7\FOR2B2U_Tverk7\obj\Debug\FOR2B2U_Tverk7.csprojResolveAssemblyReference.cache
+\\skra\nem-redirect$\2512982709\documents\visual studio 2013\Projects\FOR2B2U_Tverk7\FOR2B2U_Tverk7\obj\Debug\FOR2B2U_Tverk7.Form1.resources
+\\skra\nem-redirect$\2512982709\documents\visual studio 2013\Projects\FOR2B2U_Tverk7\FOR2B2U_Tverk7\obj\Debug\FOR2B2U_Tverk7.Properties.Resources.resources
+\\skra\nem-redirect$\2512982709\documents\visual studio 2013\Projects\FOR2B2U_Tverk7\FOR2B2U_Tverk7\obj\Debug\FOR2B2U_Tverk7.csproj.GenerateResource.Cache
+\\skra\nem-redirect$\2512982709\documents\visual studio 2013\Projects\FOR2B2U_Tverk7\FOR2B2U_Tverk7\obj\Debug\FOR2B2U_Tverk7.exe
+\\skra\nem-redirect$\2512982709\documents\visual studio 2013\Projects\FOR2B2U_Tverk7\FOR2B2U_Tverk7\obj\Debug\FOR2B2U_Tverk7.pdb
+C:\Users\2512982709\Desktop\FOR2B2U_Tverk7\FOR2B2U_Tverk7\bin\Debug\FOR2B2U_Tverk7.exe.config
+C:\Users\2512982709\Desktop\FOR2B2U_Tverk7\FOR2B2U_Tverk7\obj\Debug\FOR2B2U_Tverk7.exe
+C:\Users\2512982709\Desktop\FOR2B2U_Tverk7\FOR2B2U_Tverk7\obj\Debug\FOR2B2U_Tverk7.pdb
+C:\Users\2512982709\Desktop\FOR2B2U_Tverk7\FOR2B2U_Tverk7\bin\Debug\FOR2B2U_Tverk7.exe
+C:\Users\2512982709\Desktop\FOR2B2U_Tverk7\FOR2B2U_Tverk7\bin\Debug\FOR2B2U_Tverk7.pdb
+C:\Users\2512982709\Desktop\FOR2B2U_Tverk7\FOR2B2U_Tverk7\obj\Debug\FOR2B2U_Tverk7.csprojResolveAssemblyReference.cache
+C:\Users\2512982709\Desktop\FOR2B2U_Tverk7\FOR2B2U_Tverk7\obj\Debug\FOR2B2U_Tverk7.Form1.resources
+C:\Users\2512982709\Desktop\FOR2B2U_Tverk7\FOR2B2U_Tverk7\obj\Debug\FOR2B2U_Tverk7.Properties.Resources.resources
+C:\Users\2512982709\Desktop\FOR2B2U_Tverk7\FOR2B2U_Tverk7\obj\Debug\FOR2B2U_Tverk7.csproj.GenerateResource.Cache
+C:\Users\2512982709\Desktop\lokaverkefni_SK-master\FOR2B2U_Tverk7\bin\Debug\FOR2B2U_Tverk7.exe.config
+C:\Users\2512982709\Desktop\lokaverkefni_SK-master\FOR2B2U_Tverk7\obj\Debug\FOR2B2U_Tverk7.exe
+C:\Users\2512982709\Desktop\lokaverkefni_SK-master\FOR2B2U_Tverk7\obj\Debug\FOR2B2U_Tverk7.pdb
+C:\Users\2512982709\Desktop\lokaverkefni_SK-master\FOR2B2U_Tverk7\bin\Debug\FOR2B2U_Tverk7.exe
+C:\Users\2512982709\Desktop\lokaverkefni_SK-master\FOR2B2U_Tverk7\bin\Debug\FOR2B2U_Tverk7.pdb
+C:\Users\2512982709\Desktop\lokaverkefni_SK-master\FOR2B2U_Tverk7\obj\Debug\FOR2B2U_Tverk7.Form1.resources
+C:\Users\2512982709\Desktop\lokaverkefni_SK-master\FOR2B2U_Tverk7\obj\Debug\FOR2B2U_Tverk7.Properties.Resources.resources
+C:\Users\2512982709\Desktop\lokaverkefni_SK-master\FOR2B2U_Tverk7\obj\Debug\FOR2B2U_Tverk7.csproj.GenerateResource.Cache
+C:\Users\2512982709\Desktop\lokaverkefni_SK-master\FOR2B2U_Tverk7\obj\Debug\FOR2B2U_Tverk7.csprojResolveAssemblyReference.cache
+C:\Users\2512982709\Desktop\lokaverkefni_SK-master - Copy\FOR2B2U_Tverk7\bin\Debug\FOR2B2U_Tverk7.exe.config
+C:\Users\2512982709\Desktop\lokaverkefni_SK-master - Copy\FOR2B2U_Tverk7\obj\Debug\FOR2B2U_Tverk7.exe
+C:\Users\2512982709\Desktop\lokaverkefni_SK-master - Copy\FOR2B2U_Tverk7\obj\Debug\FOR2B2U_Tverk7.pdb
+C:\Users\2512982709\Desktop\Lokaverkefni_CSharp\lokaverk_SK\bin\Debug\FOR2B2U_Tverk7.exe.config
+C:\Users\2512982709\Desktop\Lokaverkefni_CSharp\lokaverk_SK\bin\Debug\FOR2B2U_Tverk7.exe
+C:\Users\2512982709\Desktop\Lokaverkefni_CSharp\lokaverk_SK\bin\Debug\FOR2B2U_Tverk7.pdb
+C:\Users\2512982709\Desktop\Lokaverkefni_CSharp\lokaverk_SK\obj\Debug\lokaverk_SK.csprojResolveAssemblyReference.cache
+C:\Users\2512982709\Desktop\Lokaverkefni_CSharp\lokaverk_SK\obj\Debug\lokaverk_SK.Form1.resources
+C:\Users\2512982709\Desktop\Lokaverkefni_CSharp\lokaverk_SK\obj\Debug\FOR2B2U_Tverk7.Properties.Resources.resources
+C:\Users\2512982709\Desktop\Lokaverkefni_CSharp\lokaverk_SK\obj\Debug\lokaverk_SK.csproj.GenerateResource.Cache
+C:\Users\2512982709\Desktop\Lokaverkefni_CSharp\lokaverk_SK\obj\Debug\FOR2B2U_Tverk7.exe
+C:\Users\2512982709\Desktop\Lokaverkefni_CSharp\lokaverk_SK\obj\Debug\FOR2B2U_Tverk7.pdb
