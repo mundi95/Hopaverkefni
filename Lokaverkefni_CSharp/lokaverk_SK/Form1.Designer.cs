@@ -43,7 +43,6 @@
             this.tbSkraTitill = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tbID = new System.Windows.Forms.TextBox();
-            this.btRefresh = new System.Windows.Forms.Button();
             this.btEyda = new System.Windows.Forms.Button();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -53,6 +52,10 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.btFlokkaAr = new System.Windows.Forms.Button();
             this.cbFlokkaAr = new System.Windows.Forms.ComboBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tbFlokkaTitill = new System.Windows.Forms.TextBox();
+            this.btFlokkaTitill = new System.Windows.Forms.Button();
             this.btUppfaera = new System.Windows.Forms.Button();
             this.lvTafla = new System.Windows.Forms.ListView();
             this.tbLeikstjori = new System.Windows.Forms.TextBox();
@@ -60,10 +63,6 @@
             this.tbUtgefandi = new System.Windows.Forms.TextBox();
             this.tbTitill = new System.Windows.Forms.TextBox();
             this.tbAr = new System.Windows.Forms.TextBox();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.btFlokkaTitill = new System.Windows.Forms.Button();
-            this.tbFlokkaTitill = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -347,7 +346,6 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.tbID);
-            this.tabPage2.Controls.Add(this.btRefresh);
             this.tabPage2.Controls.Add(this.btEyda);
             this.tabPage2.Controls.Add(this.tabControl2);
             this.tabPage2.Controls.Add(this.btUppfaera);
@@ -374,22 +372,12 @@
             this.tbID.Size = new System.Drawing.Size(83, 26);
             this.tbID.TabIndex = 12;
             // 
-            // btRefresh
-            // 
-            this.btRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btRefresh.Location = new System.Drawing.Point(645, 321);
-            this.btRefresh.Name = "btRefresh";
-            this.btRefresh.Size = new System.Drawing.Size(82, 28);
-            this.btRefresh.TabIndex = 11;
-            this.btRefresh.Text = "Refresh";
-            this.btRefresh.UseVisualStyleBackColor = true;
-            this.btRefresh.Click += new System.EventHandler(this.btRefresh_Click);
-            // 
             // btEyda
             // 
-            this.btEyda.Location = new System.Drawing.Point(1012, 539);
+            this.btEyda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEyda.Location = new System.Drawing.Point(1029, 539);
             this.btEyda.Name = "btEyda";
-            this.btEyda.Size = new System.Drawing.Size(83, 23);
+            this.btEyda.Size = new System.Drawing.Size(83, 34);
             this.btEyda.TabIndex = 10;
             this.btEyda.Text = "Eyða";
             this.btEyda.UseVisualStyleBackColor = true;
@@ -619,11 +607,54 @@
             this.cbFlokkaAr.Size = new System.Drawing.Size(68, 28);
             this.cbFlokkaAr.TabIndex = 0;
             // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.label7);
+            this.tabPage5.Controls.Add(this.tbFlokkaTitill);
+            this.tabPage5.Controls.Add(this.btFlokkaTitill);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(624, 283);
+            this.tabPage5.TabIndex = 2;
+            this.tabPage5.Text = "Titill";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(16, 107);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(86, 20);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Titill mynda";
+            // 
+            // tbFlokkaTitill
+            // 
+            this.tbFlokkaTitill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbFlokkaTitill.Location = new System.Drawing.Point(109, 103);
+            this.tbFlokkaTitill.Name = "tbFlokkaTitill";
+            this.tbFlokkaTitill.Size = new System.Drawing.Size(182, 26);
+            this.tbFlokkaTitill.TabIndex = 3;
+            // 
+            // btFlokkaTitill
+            // 
+            this.btFlokkaTitill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btFlokkaTitill.Location = new System.Drawing.Point(297, 103);
+            this.btFlokkaTitill.Name = "btFlokkaTitill";
+            this.btFlokkaTitill.Size = new System.Drawing.Size(75, 28);
+            this.btFlokkaTitill.TabIndex = 2;
+            this.btFlokkaTitill.Text = "Leita";
+            this.btFlokkaTitill.UseVisualStyleBackColor = true;
+            this.btFlokkaTitill.Click += new System.EventHandler(this.btFlokkaTitill_Click);
+            // 
             // btUppfaera
             // 
+            this.btUppfaera.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btUppfaera.Location = new System.Drawing.Point(930, 539);
             this.btUppfaera.Name = "btUppfaera";
-            this.btUppfaera.Size = new System.Drawing.Size(83, 23);
+            this.btUppfaera.Size = new System.Drawing.Size(83, 34);
             this.btUppfaera.TabIndex = 9;
             this.btUppfaera.Text = "Breyta";
             this.btUppfaera.UseVisualStyleBackColor = true;
@@ -647,7 +678,7 @@
             this.tbLeikstjori.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbLeikstjori.Location = new System.Drawing.Point(930, 411);
             this.tbLeikstjori.Name = "tbLeikstjori";
-            this.tbLeikstjori.Size = new System.Drawing.Size(165, 26);
+            this.tbLeikstjori.Size = new System.Drawing.Size(182, 26);
             this.tbLeikstjori.TabIndex = 5;
             // 
             // tbFlokkur
@@ -655,7 +686,7 @@
             this.tbFlokkur.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbFlokkur.Location = new System.Drawing.Point(930, 507);
             this.tbFlokkur.Name = "tbFlokkur";
-            this.tbFlokkur.Size = new System.Drawing.Size(165, 26);
+            this.tbFlokkur.Size = new System.Drawing.Size(182, 26);
             this.tbFlokkur.TabIndex = 8;
             // 
             // tbUtgefandi
@@ -663,7 +694,7 @@
             this.tbUtgefandi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbUtgefandi.Location = new System.Drawing.Point(930, 443);
             this.tbUtgefandi.Name = "tbUtgefandi";
-            this.tbUtgefandi.Size = new System.Drawing.Size(165, 26);
+            this.tbUtgefandi.Size = new System.Drawing.Size(182, 26);
             this.tbUtgefandi.TabIndex = 6;
             // 
             // tbTitill
@@ -671,7 +702,7 @@
             this.tbTitill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTitill.Location = new System.Drawing.Point(930, 379);
             this.tbTitill.Name = "tbTitill";
-            this.tbTitill.Size = new System.Drawing.Size(165, 26);
+            this.tbTitill.Size = new System.Drawing.Size(182, 26);
             this.tbTitill.TabIndex = 4;
             // 
             // tbAr
@@ -679,50 +710,8 @@
             this.tbAr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbAr.Location = new System.Drawing.Point(930, 475);
             this.tbAr.Name = "tbAr";
-            this.tbAr.Size = new System.Drawing.Size(165, 26);
+            this.tbAr.Size = new System.Drawing.Size(182, 26);
             this.tbAr.TabIndex = 7;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.label7);
-            this.tabPage5.Controls.Add(this.tbFlokkaTitill);
-            this.tabPage5.Controls.Add(this.btFlokkaTitill);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(624, 283);
-            this.tabPage5.TabIndex = 2;
-            this.tabPage5.Text = "Titill";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // btFlokkaTitill
-            // 
-            this.btFlokkaTitill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btFlokkaTitill.Location = new System.Drawing.Point(297, 103);
-            this.btFlokkaTitill.Name = "btFlokkaTitill";
-            this.btFlokkaTitill.Size = new System.Drawing.Size(75, 28);
-            this.btFlokkaTitill.TabIndex = 2;
-            this.btFlokkaTitill.Text = "Leita";
-            this.btFlokkaTitill.UseVisualStyleBackColor = true;
-            this.btFlokkaTitill.Click += new System.EventHandler(this.btFlokkaTitill_Click);
-            // 
-            // tbFlokkaTitill
-            // 
-            this.tbFlokkaTitill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbFlokkaTitill.Location = new System.Drawing.Point(109, 103);
-            this.tbFlokkaTitill.Name = "tbFlokkaTitill";
-            this.tbFlokkaTitill.Size = new System.Drawing.Size(182, 26);
-            this.tbFlokkaTitill.TabIndex = 3;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(16, 107);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 20);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Titill mynda";
             // 
             // Form1
             // 
@@ -731,7 +720,7 @@
             this.ClientSize = new System.Drawing.Size(1397, 667);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
-            this.Text = "Tverk 7";
+            this.Text = "Kvikmyndasafn";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -779,7 +768,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btRefresh;
         private System.Windows.Forms.ComboBox cbSkraAr;
         private System.Windows.Forms.TextBox tbID;
         private System.Windows.Forms.TabPage tabPage5;

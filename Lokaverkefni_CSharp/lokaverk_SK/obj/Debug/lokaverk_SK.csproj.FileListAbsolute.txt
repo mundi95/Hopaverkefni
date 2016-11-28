@@ -38,3 +38,12 @@ C:\Users\2512982709\Desktop\Lokaverkefni_CSharp\lokaverk_SK\obj\Debug\FOR2B2U_Tv
 C:\Users\2512982709\Desktop\Lokaverkefni_CSharp\lokaverk_SK\obj\Debug\lokaverk_SK.csproj.GenerateResource.Cache
 C:\Users\2512982709\Desktop\Lokaverkefni_CSharp\lokaverk_SK\obj\Debug\FOR2B2U_Tverk7.exe
 C:\Users\2512982709\Desktop\Lokaverkefni_CSharp\lokaverk_SK\obj\Debug\FOR2B2U_Tverk7.pdb
+C:\Users\2512982709\Desktop\Hopaverkefni-master\Lokaverkefni_CSharp\lokaverk_SK\bin\Debug\FOR2B2U_Tverk7.exe.config
+C:\Users\2512982709\Desktop\Hopaverkefni-master\Lokaverkefni_CSharp\lokaverk_SK\obj\Debug\FOR2B2U_Tverk7.exe
+C:\Users\2512982709\Desktop\Hopaverkefni-master\Lokaverkefni_CSharp\lokaverk_SK\obj\Debug\FOR2B2U_Tverk7.pdb
+C:\Users\2512982709\Desktop\Hopaverkefni-master\Lokaverkefni_CSharp\lokaverk_SK\bin\Debug\FOR2B2U_Tverk7.exe
+C:\Users\2512982709\Desktop\Hopaverkefni-master\Lokaverkefni_CSharp\lokaverk_SK\bin\Debug\FOR2B2U_Tverk7.pdb
+C:\Users\2512982709\Desktop\Hopaverkefni-master\Lokaverkefni_CSharp\lokaverk_SK\obj\Debug\lokaverk_SK.csprojResolveAssemblyReference.cache
+C:\Users\2512982709\Desktop\Hopaverkefni-master\Lokaverkefni_CSharp\lokaverk_SK\obj\Debug\lokaverk_SK.Form1.resources
+C:\Users\2512982709\Desktop\Hopaverkefni-master\Lokaverkefni_CSharp\lokaverk_SK\obj\Debug\FOR2B2U_Tverk7.Properties.Resources.resources
+C:\Users\2512982709\Desktop\Hopaverkefni-master\Lokaverkefni_CSharp\lokaverk_SK\obj\Debug\lokaverk_SK.csproj.GenerateResource.Cache

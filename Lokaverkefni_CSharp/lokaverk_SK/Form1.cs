@@ -101,10 +101,51 @@ namespace lokaverk_SK
             gagnagrunnur.SettInnSqlToflu(tbSkraTitill.Text, tbSkraLeikstjori.Text, tbSkraUtgefandi.Text, cbSkraAr.Text, cbSkraFlokkur.Text);
             tbSkraTitill.Clear();
             tbSkraLeikstjori.Clear();
-            tbSkraUtgefandi.Clear();
-            cbSkraAr = null;
-            cbSkraFlokkur = null;
-            
+            tbSkraUtgefandi.Clear();            
+
+            //Uppfæri ListView hér eftir skráningu.
+            lvTafla.Clear();
+            lvTafla.Columns.Add("ID", 50);
+            lvTafla.Columns.Add("Titill", 180);
+            lvTafla.Columns.Add("Leikstjóri", 180);
+            lvTafla.Columns.Add("Framleiðslufyrirtæki", 180);
+            lvTafla.Columns.Add("Ár", 40);
+            lvTafla.Columns.Add("Flokkur", 100);
+
+            List<string> linur = new List<string>();
+            string[] arr = new string[6];
+
+            ListViewItem itm;
+
+            try
+            {
+                linur = gagnagrunnur.LesaUt();
+
+                foreach (string lin in linur)
+                {
+                    string[] linaUrLista = lin.Split(':');
+                    string ID = linaUrLista[0];
+                    string titill = linaUrLista[1];
+                    string leikstjori = linaUrLista[2];
+                    string utgefandi = linaUrLista[3];
+                    string ar = linaUrLista[4];
+                    string flokkur = linaUrLista[5];
+
+                    arr[0] = ID;
+                    arr[1] = titill;
+                    arr[2] = leikstjori;
+                    arr[3] = utgefandi;
+                    arr[4] = ar;
+                    arr[5] = flokkur;
+
+                    itm = new ListViewItem(arr);
+                    lvTafla.Items.Add(itm);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }            
         }
 
         private void btUppfaera_Click(object sender, EventArgs e)
@@ -116,6 +157,51 @@ namespace lokaverk_SK
             tbUtgefandi.Text = null;
             tbAr.Text = null;
             tbFlokkur.Text = null;
+
+            //Uppfæri ListView eftir uppfærslu
+            //Uppfæri ListView hér eftir skráningu.
+            lvTafla.Clear();
+            lvTafla.Columns.Add("ID", 50);
+            lvTafla.Columns.Add("Titill", 180);
+            lvTafla.Columns.Add("Leikstjóri", 180);
+            lvTafla.Columns.Add("Framleiðslufyrirtæki", 180);
+            lvTafla.Columns.Add("Ár", 40);
+            lvTafla.Columns.Add("Flokkur", 100);
+
+            List<string> linur = new List<string>();
+            string[] arr = new string[6];
+
+            ListViewItem itm;
+
+            try
+            {
+                linur = gagnagrunnur.LesaUt();
+
+                foreach (string lin in linur)
+                {
+                    string[] linaUrLista = lin.Split(':');
+                    string ID = linaUrLista[0];
+                    string titill = linaUrLista[1];
+                    string leikstjori = linaUrLista[2];
+                    string utgefandi = linaUrLista[3];
+                    string ar = linaUrLista[4];
+                    string flokkur = linaUrLista[5];
+
+                    arr[0] = ID;
+                    arr[1] = titill;
+                    arr[2] = leikstjori;
+                    arr[3] = utgefandi;
+                    arr[4] = ar;
+                    arr[5] = flokkur;
+
+                    itm = new ListViewItem(arr);
+                    lvTafla.Items.Add(itm);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void btEyda_Click(object sender, EventArgs e)
@@ -127,6 +213,51 @@ namespace lokaverk_SK
             tbUtgefandi.Text = null;
             tbAr.Text = null;
             tbFlokkur.Text = null;
+            
+            //Uppfæri töflu eftir að mynd hefur verið eytt úr gagnagrunni
+            //Uppfæri ListView hér eftir skráningu.
+            lvTafla.Clear();
+            lvTafla.Columns.Add("ID", 50);
+            lvTafla.Columns.Add("Titill", 180);
+            lvTafla.Columns.Add("Leikstjóri", 180);
+            lvTafla.Columns.Add("Framleiðslufyrirtæki", 180);
+            lvTafla.Columns.Add("Ár", 40);
+            lvTafla.Columns.Add("Flokkur", 100);
+
+            List<string> linur = new List<string>();
+            string[] arr = new string[6];
+
+            ListViewItem itm;
+
+            try
+            {
+                linur = gagnagrunnur.LesaUt();
+
+                foreach (string lin in linur)
+                {
+                    string[] linaUrLista = lin.Split(':');
+                    string ID = linaUrLista[0];
+                    string titill = linaUrLista[1];
+                    string leikstjori = linaUrLista[2];
+                    string utgefandi = linaUrLista[3];
+                    string ar = linaUrLista[4];
+                    string flokkur = linaUrLista[5];
+
+                    arr[0] = ID;
+                    arr[1] = titill;
+                    arr[2] = leikstjori;
+                    arr[3] = utgefandi;
+                    arr[4] = ar;
+                    arr[5] = flokkur;
+
+                    itm = new ListViewItem(arr);
+                    lvTafla.Items.Add(itm);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void btFlokkaFlokk_Click(object sender, EventArgs e)//Flokka ListView eftir flokk mynda
@@ -223,51 +354,7 @@ namespace lokaverk_SK
             }
         }
 
-        private void btRefresh_Click(object sender, EventArgs e)
-        {
-            lvTafla.Clear();
-            lvTafla.Columns.Add("ID", 50);
-            lvTafla.Columns.Add("Titill", 180);
-            lvTafla.Columns.Add("Leikstjóri", 180);
-            lvTafla.Columns.Add("Framleiðslufyrirtæki", 180);
-            lvTafla.Columns.Add("Ár", 40);
-            lvTafla.Columns.Add("Flokkur", 100);
-
-            List<string> linur = new List<string>();
-            string[] arr = new string[6];
-
-            ListViewItem itm;
-
-            try
-            {
-                linur = gagnagrunnur.LesaUt();
-
-                foreach (string lin in linur)
-                {
-                    string[] linaUrLista = lin.Split(':');
-                    string ID = linaUrLista[0];
-                    string titill = linaUrLista[1];
-                    string leikstjori = linaUrLista[2];
-                    string utgefandi = linaUrLista[3];
-                    string ar = linaUrLista[4];
-                    string flokkur = linaUrLista[5];
-
-                    arr[0] = ID;
-                    arr[1] = titill;
-                    arr[2] = leikstjori;
-                    arr[3] = utgefandi;
-                    arr[4] = ar;
-                    arr[5] = flokkur;
-
-                    itm = new ListViewItem(arr);
-                    lvTafla.Items.Add(itm);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-        }
+        
 
         private void btFlokkaTitill_Click(object sender, EventArgs e)
         {
