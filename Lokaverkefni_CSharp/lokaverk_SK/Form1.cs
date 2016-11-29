@@ -360,6 +360,8 @@ namespace lokaverk_SK
         {
             gagnagrunnur.FinnaMynd(tbFlokkaTitill.Text);
             tbFlokkaTitill.Text = null;
-        }              
+        }
+
+                   
     }
 }

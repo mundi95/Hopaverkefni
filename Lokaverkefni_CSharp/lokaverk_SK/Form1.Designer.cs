@@ -42,6 +42,11 @@
             this.tbSkraLeikstjori = new System.Windows.Forms.TextBox();
             this.tbSkraTitill = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.tbID = new System.Windows.Forms.TextBox();
             this.btEyda = new System.Windows.Forms.Button();
             this.tabControl2 = new System.Windows.Forms.TabControl();
@@ -63,6 +68,7 @@
             this.tbUtgefandi = new System.Windows.Forms.TextBox();
             this.tbTitill = new System.Windows.Forms.TextBox();
             this.tbAr = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -345,6 +351,12 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label13);
+            this.tabPage2.Controls.Add(this.label8);
+            this.tabPage2.Controls.Add(this.label9);
+            this.tabPage2.Controls.Add(this.label10);
+            this.tabPage2.Controls.Add(this.label11);
+            this.tabPage2.Controls.Add(this.label12);
             this.tabPage2.Controls.Add(this.tbID);
             this.tabPage2.Controls.Add(this.btEyda);
             this.tabPage2.Controls.Add(this.tabControl2);
@@ -362,6 +374,56 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Skoða Myndir";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(859, 510);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(65, 20);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Flokkur:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(848, 477);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(76, 20);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "Útgáfuár:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(728, 445);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(196, 20);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "Nafn Framleiðslufyrirtækis:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(811, 413);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(113, 20);
+            this.label11.TabIndex = 14;
+            this.label11.Text = "Nafn leikstjóra:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(794, 381);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(130, 20);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "Titill myndarinnar:";
             // 
             // tbID
             // 
@@ -713,6 +775,16 @@
             this.tbAr.Size = new System.Drawing.Size(182, 26);
             this.tbAr.TabIndex = 7;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(894, 350);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(30, 20);
+            this.label13.TabIndex = 18;
+            this.label13.Text = "ID:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -774,6 +846,12 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbFlokkaTitill;
         private System.Windows.Forms.Button btFlokkaTitill;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
     }
 }
 
