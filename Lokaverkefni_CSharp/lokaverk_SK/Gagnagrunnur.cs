@@ -79,7 +79,7 @@ namespace lokaverk_SK
             string lina = null;
             if (OpenConnection() == true)
             {
-                fyrirspurn = "SELECT ID, titill, leikstjori, utgefandi, ar, flokkur FROM kvikmyndir";
+                fyrirspurn = "SELECT ID, titill, leikstjori, utgefandi, ar, flokkur, link FROM kvikmyndir";
                 nySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
                 sqllesari = nySQLskipun.ExecuteReader();
                 while (sqllesari.Read())
@@ -190,21 +190,21 @@ namespace lokaverk_SK
             }
             return Faerslur;
         }
-        public void SettInnSqlToflu(string titill, string leikstjori, string utgefandi, string ar, string flokkur)
+        public void SettInnSqlToflu(string titill, string leikstjori, string utgefandi, string ar, string flokkur, string link)
         {
             if (OpenConnection() == true)
             {
-                fyrirspurn = "INSERT INTO kvikmyndir(titill, leikstjori, utgefandi, ar, flokkur) VALUES ('" + titill + "','" + leikstjori + "','" + utgefandi + "','" + ar + "','" + flokkur + "')";
+                fyrirspurn = "INSERT INTO kvikmyndir(titill, leikstjori, utgefandi, ar, flokkur, link) VALUES ('" + titill + "','" + leikstjori + "','" + utgefandi + "','" + ar + "','" + flokkur + "','" + link + "')";
                 nySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);                
                 nySQLskipun.ExecuteNonQuery();
                 CloseConnection();
             }
         }
-        public void Uppfaera(string ID, string titill, string leikstjori, string utgefandi, string ar, string flokkur)
+        public void Uppfaera(string ID, string titill, string leikstjori, string utgefandi, string ar, string flokkur, string link)
         {
             if (OpenConnection() == true)
             {
-                fyrirspurn = "Update kvikmyndir set titill ='" + titill + "', leikstjori='" + leikstjori + "',utgefandi='" + utgefandi + "',ar='" + ar + "',flokkur='" + flokkur + "' where ID='" + ID + "'";
+                fyrirspurn = "Update kvikmyndir set titill ='" + titill + "', leikstjori='" + leikstjori + "',utgefandi='" + utgefandi + "',ar='" + ar + "',flokkur='" + flokkur + "' ,link='" + link + "' where ID='" + ID + "'";
                 nySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
                 nySQLskipun.ExecuteNonQuery();
                 CloseConnection();

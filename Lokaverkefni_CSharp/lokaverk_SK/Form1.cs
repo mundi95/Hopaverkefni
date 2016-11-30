@@ -16,7 +16,7 @@ namespace lokaverk_SK
 {
     
     public partial class Form1 : Form
-    {
+    {        
         Gagnagrunnur gagnagrunnur = new Gagnagrunnur();        
         public Form1()
         {
@@ -41,9 +41,10 @@ namespace lokaverk_SK
             lvTafla.Columns.Add("Framleiðslufyrirtæki", 180);
             lvTafla.Columns.Add("Ár", 40);
             lvTafla.Columns.Add("Flokkur", 100);
+            lvTafla.Columns.Add("Link", 0);
 
             List<string> linur = new List<string>();
-            string[] arr = new string[6];
+            string[] arr = new string[7];
 
             ListViewItem itm;
 
@@ -60,6 +61,7 @@ namespace lokaverk_SK
                     string utgefandi = linaUrLista[3];
                     string ar = linaUrLista[4];
                     string flokkur = linaUrLista[5];
+                    string link = linaUrLista[6];
 
                     arr[0] = ID;
                     arr[1] = titill;
@@ -67,6 +69,7 @@ namespace lokaverk_SK
                     arr[3] = utgefandi;
                     arr[4] = ar;
                     arr[5] = flokkur;
+                    arr[6] = link;
 
                     itm = new ListViewItem(arr);
                     lvTafla.Items.Add(itm);
@@ -93,12 +96,13 @@ namespace lokaverk_SK
                 tbUtgefandi.Text = lvTafla.SelectedItems[0].SubItems[3].Text;
                 tbAr.Text = lvTafla.SelectedItems[0].SubItems[4].Text;
                 tbFlokkur.Text = lvTafla.SelectedItems[0].SubItems[5].Text;
+                tbLinkEdit.Text = lvTafla.SelectedItems[0].SubItems[6].Text;
             }
         }    
 
         private void btSkra_Click(object sender, EventArgs e)
         {
-            gagnagrunnur.SettInnSqlToflu(tbSkraTitill.Text, tbSkraLeikstjori.Text, tbSkraUtgefandi.Text, cbSkraAr.Text, cbSkraFlokkur.Text);
+            gagnagrunnur.SettInnSqlToflu(tbSkraTitill.Text, tbSkraLeikstjori.Text, tbSkraUtgefandi.Text, cbSkraAr.Text, cbSkraFlokkur.Text, tbLink.Text);
             tbSkraTitill.Clear();
             tbSkraLeikstjori.Clear();
             tbSkraUtgefandi.Clear();            
@@ -111,9 +115,10 @@ namespace lokaverk_SK
             lvTafla.Columns.Add("Framleiðslufyrirtæki", 180);
             lvTafla.Columns.Add("Ár", 40);
             lvTafla.Columns.Add("Flokkur", 100);
+            lvTafla.Columns.Add("Link", 0);
 
             List<string> linur = new List<string>();
-            string[] arr = new string[6];
+            string[] arr = new string[7];
 
             ListViewItem itm;
 
@@ -130,6 +135,7 @@ namespace lokaverk_SK
                     string utgefandi = linaUrLista[3];
                     string ar = linaUrLista[4];
                     string flokkur = linaUrLista[5];
+                    string link = linaUrLista[6];
 
                     arr[0] = ID;
                     arr[1] = titill;
@@ -137,6 +143,7 @@ namespace lokaverk_SK
                     arr[3] = utgefandi;
                     arr[4] = ar;
                     arr[5] = flokkur;
+                    arr[6] = link;
 
                     itm = new ListViewItem(arr);
                     lvTafla.Items.Add(itm);
@@ -150,13 +157,14 @@ namespace lokaverk_SK
 
         private void btUppfaera_Click(object sender, EventArgs e)
         {
-            gagnagrunnur.Uppfaera(tbID.Text, tbTitill.Text, tbLeikstjori.Text, tbUtgefandi.Text, tbAr.Text, tbFlokkur.Text);
+            gagnagrunnur.Uppfaera(tbID.Text, tbTitill.Text, tbLeikstjori.Text, tbUtgefandi.Text, tbAr.Text, tbFlokkur.Text, tbLinkEdit.Text);
             tbID.Text = null;
             tbTitill.Text = null;
             tbLeikstjori.Text= null;
             tbUtgefandi.Text = null;
             tbAr.Text = null;
             tbFlokkur.Text = null;
+            tbLinkEdit.Text = null;
 
             //Uppfæri ListView eftir uppfærslu
             //Uppfæri ListView hér eftir skráningu.
@@ -167,9 +175,10 @@ namespace lokaverk_SK
             lvTafla.Columns.Add("Framleiðslufyrirtæki", 180);
             lvTafla.Columns.Add("Ár", 40);
             lvTafla.Columns.Add("Flokkur", 100);
+            lvTafla.Columns.Add("Link", 0);
 
             List<string> linur = new List<string>();
-            string[] arr = new string[6];
+            string[] arr = new string[7];
 
             ListViewItem itm;
 
@@ -186,6 +195,7 @@ namespace lokaverk_SK
                     string utgefandi = linaUrLista[3];
                     string ar = linaUrLista[4];
                     string flokkur = linaUrLista[5];
+                    string link = linaUrLista[6];
 
                     arr[0] = ID;
                     arr[1] = titill;
@@ -193,6 +203,7 @@ namespace lokaverk_SK
                     arr[3] = utgefandi;
                     arr[4] = ar;
                     arr[5] = flokkur;
+                    arr[6] = link;
 
                     itm = new ListViewItem(arr);
                     lvTafla.Items.Add(itm);
@@ -223,9 +234,10 @@ namespace lokaverk_SK
             lvTafla.Columns.Add("Framleiðslufyrirtæki", 180);
             lvTafla.Columns.Add("Ár", 40);
             lvTafla.Columns.Add("Flokkur", 100);
+            lvTafla.Columns.Add("Link", 0);
 
             List<string> linur = new List<string>();
-            string[] arr = new string[6];
+            string[] arr = new string[7];
 
             ListViewItem itm;
 
@@ -242,6 +254,7 @@ namespace lokaverk_SK
                     string utgefandi = linaUrLista[3];
                     string ar = linaUrLista[4];
                     string flokkur = linaUrLista[5];
+                    string link = linaUrLista[6];
 
                     arr[0] = ID;
                     arr[1] = titill;
@@ -249,6 +262,7 @@ namespace lokaverk_SK
                     arr[3] = utgefandi;
                     arr[4] = ar;
                     arr[5] = flokkur;
+                    arr[6] = link;
 
                     itm = new ListViewItem(arr);
                     lvTafla.Items.Add(itm);
@@ -270,9 +284,10 @@ namespace lokaverk_SK
             lvTafla.Columns.Add("Framleiðslufyrirtæki", 180);
             lvTafla.Columns.Add("Ár", 40);
             lvTafla.Columns.Add("Flokkur", 100);
+            lvTafla.Columns.Add("Link", 0);
 
             List<string> linur = new List<string>();
-            string[] arr = new string[6];
+            string[] arr = new string[7];
 
             ListViewItem itm;
 
@@ -281,7 +296,7 @@ namespace lokaverk_SK
                 linur = gagnagrunnur.LesaUtFlokk(mynd);
 
                 foreach (string lin in linur)
-                {
+                {                    
                     string[] linaUrLista = lin.Split(':');
                     string ID = linaUrLista[0];
                     string titill = linaUrLista[1];
@@ -289,6 +304,7 @@ namespace lokaverk_SK
                     string utgefandi = linaUrLista[3];
                     string ar = linaUrLista[4];
                     string flokkur = linaUrLista[5];
+                    string link = linaUrLista[6];
 
                     arr[0] = ID;
                     arr[1] = titill;
@@ -296,6 +312,7 @@ namespace lokaverk_SK
                     arr[3] = utgefandi;
                     arr[4] = ar;
                     arr[5] = flokkur;
+                    arr[6] = link;
 
                     itm = new ListViewItem(arr);
                     lvTafla.Items.Add(itm);
@@ -317,9 +334,10 @@ namespace lokaverk_SK
             lvTafla.Columns.Add("Framleiðslufyrirtæki", 180);
             lvTafla.Columns.Add("Ár", 40);
             lvTafla.Columns.Add("Flokkur", 100);
+            lvTafla.Columns.Add("Link", 0);
 
             List<string> linur = new List<string>();
-            string[] arr = new string[6];
+            string[] arr = new string[7];
 
             ListViewItem itm;
 
@@ -336,6 +354,7 @@ namespace lokaverk_SK
                     string utgefandi = linaUrLista[3];
                     string ar = linaUrLista[4];
                     string flokkur = linaUrLista[5];
+                    string link = linaUrLista[6];
 
                     arr[0] = ID;
                     arr[1] = titill;
@@ -343,6 +362,7 @@ namespace lokaverk_SK
                     arr[3] = utgefandi;
                     arr[4] = ar;
                     arr[5] = flokkur;
+                    arr[6] = link;
 
                     itm = new ListViewItem(arr);
                     lvTafla.Items.Add(itm);
@@ -360,6 +380,12 @@ namespace lokaverk_SK
         {
             gagnagrunnur.FinnaMynd(tbFlokkaTitill.Text);
             tbFlokkaTitill.Text = null;
+        }
+
+        private void btIMDB_Click(object sender, EventArgs e)
+        {
+            Vafri vefur = new Vafri(tbLinkEdit.Text);
+            vefur.Show();
         }
 
                    

@@ -47,3 +47,4 @@ C:\Users\2512982709\Desktop\Hopaverkefni-master\Lokaverkefni_CSharp\lokaverk_SK\
 C:\Users\2512982709\Desktop\Hopaverkefni-master\Lokaverkefni_CSharp\lokaverk_SK\obj\Debug\lokaverk_SK.Form1.resources
 C:\Users\2512982709\Desktop\Hopaverkefni-master\Lokaverkefni_CSharp\lokaverk_SK\obj\Debug\FOR2B2U_Tverk7.Properties.Resources.resources
 C:\Users\2512982709\Desktop\Hopaverkefni-master\Lokaverkefni_CSharp\lokaverk_SK\obj\Debug\lokaverk_SK.csproj.GenerateResource.Cache
+C:\Users\2512982709\Desktop\Hopaverkefni-master\Lokaverkefni_CSharp\lokaverk_SK\obj\Debug\lokaverk_SK.Vafri.resources

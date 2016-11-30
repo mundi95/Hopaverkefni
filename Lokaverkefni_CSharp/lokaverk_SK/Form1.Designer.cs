@@ -42,6 +42,7 @@
             this.tbSkraLeikstjori = new System.Windows.Forms.TextBox();
             this.tbSkraTitill = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -68,7 +69,11 @@
             this.tbUtgefandi = new System.Windows.Forms.TextBox();
             this.tbTitill = new System.Windows.Forms.TextBox();
             this.tbAr = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.tbLink = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.tbLinkEdit = new System.Windows.Forms.TextBox();
+            this.btIMDB = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -90,6 +95,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label14);
+            this.tabPage1.Controls.Add(this.tbLink);
             this.tabPage1.Controls.Add(this.cbSkraAr);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.label5);
@@ -351,6 +358,9 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btIMDB);
+            this.tabPage2.Controls.Add(this.label15);
+            this.tabPage2.Controls.Add(this.tbLinkEdit);
             this.tabPage2.Controls.Add(this.label13);
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.label9);
@@ -374,6 +384,16 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Skoða Myndir";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(894, 350);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(30, 20);
+            this.label13.TabIndex = 18;
+            this.label13.Text = "ID:";
             // 
             // label8
             // 
@@ -437,7 +457,7 @@
             // btEyda
             // 
             this.btEyda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEyda.Location = new System.Drawing.Point(1029, 539);
+            this.btEyda.Location = new System.Drawing.Point(1029, 580);
             this.btEyda.Name = "btEyda";
             this.btEyda.Size = new System.Drawing.Size(83, 34);
             this.btEyda.TabIndex = 10;
@@ -714,7 +734,7 @@
             // btUppfaera
             // 
             this.btUppfaera.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btUppfaera.Location = new System.Drawing.Point(930, 539);
+            this.btUppfaera.Location = new System.Drawing.Point(930, 580);
             this.btUppfaera.Name = "btUppfaera";
             this.btUppfaera.Size = new System.Drawing.Size(83, 34);
             this.btUppfaera.TabIndex = 9;
@@ -775,15 +795,52 @@
             this.tbAr.Size = new System.Drawing.Size(182, 26);
             this.tbAr.TabIndex = 7;
             // 
-            // label13
+            // tbLink
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(894, 350);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(30, 20);
-            this.label13.TabIndex = 18;
-            this.label13.Text = "ID:";
+            this.tbLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbLink.Location = new System.Drawing.Point(209, 301);
+            this.tbLink.Name = "tbLink";
+            this.tbLink.Size = new System.Drawing.Size(214, 26);
+            this.tbLink.TabIndex = 13;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(157, 304);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(46, 20);
+            this.label14.TabIndex = 14;
+            this.label14.Text = "Link: ";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(882, 542);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(42, 20);
+            this.label15.TabIndex = 20;
+            this.label15.Text = "Link:";
+            // 
+            // tbLinkEdit
+            // 
+            this.tbLinkEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbLinkEdit.Location = new System.Drawing.Point(930, 539);
+            this.tbLinkEdit.Name = "tbLinkEdit";
+            this.tbLinkEdit.Size = new System.Drawing.Size(182, 26);
+            this.tbLinkEdit.TabIndex = 19;
+            // 
+            // btIMDB
+            // 
+            this.btIMDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btIMDB.Location = new System.Drawing.Point(1118, 539);
+            this.btIMDB.Name = "btIMDB";
+            this.btIMDB.Size = new System.Drawing.Size(95, 26);
+            this.btIMDB.TabIndex = 21;
+            this.btIMDB.Text = "Leita";
+            this.btIMDB.UseVisualStyleBackColor = true;
+            this.btIMDB.Click += new System.EventHandler(this.btIMDB_Click);
             // 
             // Form1
             // 
@@ -852,6 +909,11 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox tbLink;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox tbLinkEdit;
+        private System.Windows.Forms.Button btIMDB;
     }
 }
 
