@@ -384,8 +384,16 @@ namespace lokaverk_SK
 
         private void btIMDB_Click(object sender, EventArgs e)
         {
-            Vafri vefur = new Vafri(tbLinkEdit.Text);
-            vefur.Show();
+            if (tbLinkEdit.Text == "")
+            {
+                MessageBox.Show("Þú þarft að velja mynd í ListView.");
+            }
+            else
+            {
+                Vafri vefur = new Vafri(tbLinkEdit.Text);
+                vefur.Show();
+            }
+            
         }
 
                    
