@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /* Sveinn Máni Jónsson
+ * Kristmundur Ari
  * 23.11.2016
  * Lokaverkefni
  */

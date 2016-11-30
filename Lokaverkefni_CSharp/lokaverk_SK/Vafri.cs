@@ -7,6 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+/* Sveinn Máni Jónsson
+ * Kristmundur Ari
+ * 30.11.2016
+ * Lokaverkefni
+ */
 
 namespace lokaverk_SK
 {

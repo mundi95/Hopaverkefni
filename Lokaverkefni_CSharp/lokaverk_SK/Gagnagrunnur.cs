@@ -7,6 +7,7 @@ using MySql.Data.MySqlClient;//Til að hægt sé að tengjast.
 using System.Windows.Forms;
 using System.Data;
 /* Sveinn Máni Jónsson
+ * Kristmundur Ari
  * 23.11.2016
  * Lokaverkefni
  */
