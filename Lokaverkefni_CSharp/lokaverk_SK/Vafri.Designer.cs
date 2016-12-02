@@ -37,14 +37,14 @@
             this.wbVafri.Location = new System.Drawing.Point(0, 0);
             this.wbVafri.MinimumSize = new System.Drawing.Size(20, 20);
             this.wbVafri.Name = "wbVafri";
-            this.wbVafri.Size = new System.Drawing.Size(1125, 695);
+            this.wbVafri.Size = new System.Drawing.Size(1125, 642);
             this.wbVafri.TabIndex = 0;
             // 
             // Vafri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1125, 695);
+            this.ClientSize = new System.Drawing.Size(1125, 642);
             this.Controls.Add(this.wbVafri);
             this.Name = "Vafri";
             this.Text = "Vafri";

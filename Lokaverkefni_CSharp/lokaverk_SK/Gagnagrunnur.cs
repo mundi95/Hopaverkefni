@@ -103,7 +103,7 @@ namespace lokaverk_SK
             string lina = null;
             if (OpenConnection() == true)
             {
-                fyrirspurn = "SELECT ID, titill, leikstjori, utgefandi, ar, flokkur FROM kvikmyndir WHERE flokkur=" + "'" + mynd + "'";
+                fyrirspurn = "SELECT ID, titill, leikstjori, utgefandi, ar, flokkur, link FROM kvikmyndir WHERE flokkur=" + "'" + mynd + "'";
                 nySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
                 sqllesari = nySQLskipun.ExecuteReader();
                 while (sqllesari.Read())
@@ -126,7 +126,7 @@ namespace lokaverk_SK
             string lina = null;
             if (OpenConnection() == true)
             {
-                fyrirspurn = "SELECT ID, titill, leikstjori, utgefandi, ar, flokkur FROM kvikmyndir WHERE ar=" + "'" + ar + "'";
+                fyrirspurn = "SELECT ID, titill, leikstjori, utgefandi, ar, flokkur, link FROM kvikmyndir WHERE ar=" + "'" + ar + "'";
                 nySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
                 sqllesari = nySQLskipun.ExecuteReader();
                 while (sqllesari.Read())
@@ -149,7 +149,7 @@ namespace lokaverk_SK
             string lina = null;
             if (OpenConnection() == true)
             {
-                fyrirspurn = "SELECT ID, titill, leikstjori, utgefandi, ar, flokkur FROM kvikmyndir WHERE titill=" + "'" + titill + "'";
+                fyrirspurn = "SELECT ID, titill, leikstjori, utgefandi, ar, flokkur, link FROM kvikmyndir WHERE titill=" + "'" + titill + "'";
                 nySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
                 sqllesari = nySQLskipun.ExecuteReader();
                 while (sqllesari.Read())
@@ -221,24 +221,5 @@ namespace lokaverk_SK
                 CloseConnection();
             }
         }        
-        /*public string FinnaEinstakling(string id)
-        {
-            string lina = null;
-            if (OpenConnection() == true)
-            {
-                fyrirspurn = "SELECT id_medlimur,Nafn,netfang,simanumer FROM medlimur where id_medlimur='" + id + "'";
-                nySQLskipun = new MySqlCommand(fyrirspurn, sqltenging);
-                sqllesari = nySQLskipun.ExecuteReader();
-                while (sqllesari.Read())
-                {
-                    for (int i = 0; i < sqllesari.FieldCount; i++)
-                    {
-                        lina += (sqllesari.GetValue(i).ToString()) + ":";
-                    }
-                }
-                sqltenging.Close();
-            }
-            return lina;
-        }*/
     }
 }
